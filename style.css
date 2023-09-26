@@ -1,0 +1,420 @@
+/* Import font */
+@font-face {
+    font-family: 'Aldrich';
+    src: url(./Aldrich\ Regular/aldrich-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Iceland';
+    src: url(./Iceland-Regular/Iceland-Regular.ttf)
+}
+
+
+/*Font*/
+.font-p {
+    font-family: 'Aldrich';
+}
+
+.font-s {
+    font-family: 'Iceland';
+}
+
+.normal-text {
+    font-size: 20px;
+}
+
+.medium-text {
+    font-size: 40px;
+}
+
+.big-text {
+    font-size: 50px;
+}
+
+:root {
+    --primary-color: #050e2d;
+    --secondary-color: #1b2141;
+    --tertiary-color: #1aeeef;
+    --acc-color: rgb(195, 255, 0);
+}
+
+.p-color {
+    color: var(--primary-color);
+}
+
+.s-color {
+    color: var(--secondary-color);
+}
+
+.t-color {
+    color: var(--tertiary-color);
+}
+
+.acc {
+    color: var(--acc-color);
+}
+
+
+/*Basic Style*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color) !important;
+}
+
+.navbar {
+    width: 100%;
+    align-items: center;
+    background-color: #1b2141;
+}
+
+
+.navbar a {
+    list-style: none;
+    color: #fbfbfb;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+
+
+
+
+
+/*Header*/
+.containerHeader {
+    color: #fbfbfb;
+}
+
+.bg-col2Header {
+    box-shadow: 8px 8px 5px var(--secondary-color);
+    height: 360px;
+    width: 50%;
+    background-image: url(./media/bg-header.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containerHeader p {
+    color: var(--tertiary-color) !important;
+}
+
+
+/*Visita il mondo HackGames*/
+.containerVisita {
+    color: white;
+    background: linear-gradient(var(--primary-color), transparent, var(--primary-color)), url('./media/Polygon\ Luminary.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.border-visit {
+    border-bottom: 2px solid var(--tertiary-color);
+    position: relative;
+}
+
+.border-visit::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: var(--tertiary-color);
+    right: -2px;
+    bottom: -8px;
+}
+
+.border-numbers-custom{
+    background:
+        linear-gradient(to right, var(--tertiary-color) 2px, transparent 2px) 0 0,
+        linear-gradient(to right, var(--tertiary-color) 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, var(--tertiary-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to left, var(--tertiary-color) 2px, transparent 2px) 100% 100%,
+        linear-gradient(to bottom, var(--tertiary-color) 2px, transparent 2px) 0 0,
+        linear-gradient(to bottom, var(--tertiary-color) 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, var(--tertiary-color) 2px, transparent 2px) 0 100%,
+        linear-gradient(to top, var(--tertiary-color) 2px, transparent 2px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.containerVisita i {
+    color: var(--tertiary-color);
+}
+
+.myCard {
+    background-image: url(./media/bg-registrati.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+
+}
+
+.myCard2 {
+    background-image: url(./media/bg-caricamento.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.myCard3 {
+    background-image: url(./media/bg-gioca.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.containerVisita h2 {
+    text-shadow: 2px 2px 4px var(--secondary-color);
+}
+
+
+/*Countdown*/
+.containerCountdown {
+    color: white;
+}
+
+.countdown li {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px var(--tertiary-color);
+}
+
+.countdown li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+
+
+
+/*Ultimi inseriti*/
+.containerUltimi {
+    background: linear-gradient(var(--primary-color), transparent, var(--primary-color)), url('./media/Hexagon.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.containerUltimi a {
+    list-style: none;
+    color: #fbfbfb;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--tertiary-color);
+}
+
+.containerUltimi a:hover {
+    background: #1aeeef;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+.containerUltimi hr {
+    color: var(--tertiary-color);
+}
+
+.cardUltimi {
+    background-image: url(./media/Rect\ Light.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px var(--primary-color);
+    border-radius: 5px;
+}
+
+.cardUltimi h3{
+    padding: 1em;
+    color: white;
+    text-shadow: 2px 2px 4px var(--tertiary-color);
+}
+
+
+
+/*Carica il tuo gioco*/
+.bg-col2Carica {
+    box-shadow: 8px 8px 5px var(--secondary-color);
+    height: 360px;
+    width: 50%;
+    background-image: url(./media/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containerCarica {
+    color: white
+}
+
+.containerCarica a {
+    list-style: none;
+    color: #fbfbfb;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--tertiary-color);
+}
+
+.containerCarica a:hover {
+    background: #1aeeef;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+/*Footer*/
+.containerFooter {
+    color: white;
+    height: 350px;
+    background: linear-gradient(var(--primary-color), transparent, var(--primary-color)), url('./media/Cloudy.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bi-twitter {
+    color: #00acee;
+}
+
+.bi-twitch {
+    color: #6441a5;
+}
+
+.bi-facebook {
+    color: #3b5998;
+}
+
+
+
+
+
+
+
+
+/*All games*/
+.containerAllgames {
+    color: white;
+}
+
+.input-group {
+    box-shadow: 5px 10px var(--tertiary-color);
+}
+
+.form-select {
+    box-shadow: 5px 10px var(--tertiary-color);
+}
+
+
+/*Register*/
+.containerRegister {
+    background: linear-gradient(var(--primary-color), transparent, var(--primary-color)), url('./media/Circuit\ Board.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-form {
+    backdrop-filter: blur(10px);
+}
+
+.containerRegister a {
+    list-style: none;
+    color: #fbfbfb;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--tertiary-color);
+}
+
+.containerRegister a:hover {
+    background: #1aeeef;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+/*Details game*/
+.containerDetails {
+    color: white;
+    background: linear-gradient(var(--primary-color), transparent, var(--primary-color)), url('./media/Circuit\ Primary.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.containerDetails a {
+    list-style: none;
+    color: #fbfbfb;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--tertiary-color);
+}
+
+.containerDetails a:hover {
+    background: #1aeeef;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+#chartdiv {
+    width: 100%;
+    height: 450px;
+}
+
+
+
+/*Contact*/
+.containerContact {
+    color: white;
+    background: linear-gradient(var(--primary-color), transparent, var(--primary-color)), url('./media/Animated\ Shape.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.containerContact i {
+    color: white;
+}
+
+.bi-whatsapp {
+    color: #25D366 !important;
+}
+
+.bi-facebook {
+    color: #3b5998 !important;
+}
+.bi-envelope-at{
+    color: red !important;;
+}
+
+.containerContact a{
+    text-decoration: none;
+    list-style: none !important;
+    color:white;
+}
+
+.containerContact a:hover {
+    background: #1aeeef;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--tertiary-color);
+}

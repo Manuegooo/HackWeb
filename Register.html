@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HackgGames</title>
+
+    <!--Il mio foglio CSS-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!--Icon Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!--CDN AOS library Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md fixed-top normal-text">
+        <div class="container-fluid">
+            <a data-aos="zoom-in-right" data-aos-duration="2200" class="navbar-brand px-4 font-p"
+                href="./Home.html">HACKGAMES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse font-s" id="navbarSupportedContent">
+                <ul data-aos="zoom-in-down" data-aos-duration="2200" class="navbar-nav mx-auto">
+                    <li class="nav-item mx-3 ">
+                        <a href="./All games.html">All games</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="./Detail.html">Details game</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a data-aos="zoom-out-left" data-aos-duration="3000" href="./Register.html"><i
+                            class="bi bi-person-plus fs-4 tx-p"></i></a>
+                    <a data-aos="zoom-out-left" data-aos-duration="2200" href="#"><i
+                            class="bi bi-person-check fs-4 tx-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--containerRegister-->
+    <div class="containerRegister h-100">
+        <div class="d-flex h-100 text-center align-items-center justify-content-center">
+            <div data-aos="zoom-out-down" data-aos-duration="3000" class="w-50 text-white mt-5">
+                <form class="border-numbers-custom mt-5 p-3 bg-form">
+                    <div class="mb-3">
+                        <label for="username" class="form-label font-s fs-4 s">UserName</label>
+                        <input type="username" class="form-control rounded-0" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label font-s fs-4 s">Email</label>
+                        <input type="email" class="form-control rounded-0" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label font-s fs-4 s">Password</label>
+                        <input type="password" class="form-control rounded-0" id="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm" class="form-label font-s fs-4 s">Conferma Password</label>
+                        <input type="password" class="form-control rounded-0" id="confirm">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck1">
+                        <label class="form-check-label font-s acc d-block text-start" for="exampleCheck1">Consenti uso
+                            dati personali</label>
+                    </div>
+                    <button class="bg-transparent border border-0 font-s normal-text"><a>Register!</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <div class="containerFooter mt-5">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2600"
+            class="row h-100 d-flex text-center align-items-center mt-5">
+            <div class="col-12 col-md-6">
+                <p class=" normal-text font-p mb-0">2022 @ copyright 'HackGames'</p>
+            </div>
+            <div class="col-12 col-md-6 medium-text pt-3">
+                <i class="bi bi-twitter p-3 mx-3"></i>
+                <i class="bi bi-twitch p-3 mx-3"></i>
+                <i class="bi bi-facebook p-3 mx-3"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Il mio foglio JS-->
+    <script src="Home.js">
+    </script>
+    <!--CDN AOS library Animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
+</doctype>
